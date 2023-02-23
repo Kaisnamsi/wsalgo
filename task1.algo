@@ -1,0 +1,16 @@
+ALGORITHM overlaping
+VAR
+    matrix_intervalle : ARRAY_OF INTEGER[20][2];
+    i,j,n : INTEGER;
+BEGIN
+    REPEAT
+        write("nombre des intervalles")
+    read(n)
+    UNTIL (n>=2 AND n<=20)
+FOR i FROM 0 TO n-1 STEP step  DO
+    FOR j FROM 0 TO 1 STEP step  DO
+    read(matrix_intervalle[i][j])
+    END_FOR
+END_FOR
+
+END
